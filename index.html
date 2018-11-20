@@ -199,11 +199,12 @@
 		        </div>
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
-		            <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+		            <li class="active"><a href="#" data-nav-section="home"><span>Portada</span></a></li>
 		            <li><a href="#" data-nav-section="objetivos"><span>Objetivos</span></a></li>
-		            <li><a href="#" data-nav-section="SVM"><span>SVM</span></a></li>
-		            <li><a href="#" data-nav-section="about"><span>About</span></a></li>
-		            <li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+					<li><a href="#" data-nav-section="SVM"><span>Máquinas de Vectores de Soporte</span></a></li>
+		            <li><a href="#" data-nav-section="Filtrado Bayesiano"><span>Filtrado Bayesiano</span></a></li>
+		            <li><a href="#" data-nav-section="Filtrado colaborativo "><span>Filtrado colaborativo </span></a></li>
+		            <li><a href="#" data-nav-section="Redes Neuronales"><span>Redes Neuronales</span></a></li>
 		          </ul>
 		        </div>
 			    </nav>
@@ -226,48 +227,6 @@
 			</div>
 		</div>
 		<div class="slant"></div>
-	</section>
-
-	<section id="fh5co-intro">
-		<div class="container">
-			<div class="row row-bottom-padded-lg">
-				<div class="fh5co-block to-animate" style="background-image: url(images/img_7.jpg);">
-					<div class="overlay-darker"></div>
-					<div class="overlay"></div>
-					<div class="fh5co-text">
-						<i class="fh5co-intro-icon icon-bulb"></i>
-						<h2>Plan</h2>
-						<p>There's a sign on the wall, But she wants to be sure 'Cause you know sometimes words have two meanings.</p>
-						<p><a href="#" class="btn btn-primary">Get In Touch</a></p>
-					</div>
-				</div>
-				<div class="fh5co-block to-animate" style="background-image: url(images/img_8.jpg);">
-					<div class="overlay-darker"></div>
-					<div class="overlay"></div>
-					<div class="fh5co-text">
-						<i class="fh5co-intro-icon icon-wrench"></i>
-						<h2>Develop</h2>
-						<p>In a tree by the brook. There's a songbird who sings. Sometimes all of our thoughts are misgiving, it makes me wonder.</p>
-						<p><a href="#" class="btn btn-primary">Click Me</a></p>
-					</div>
-				</div>
-				<div class="fh5co-block to-animate" style="background-image: url(images/img_10.jpg);">
-					<div class="overlay-darker"></div>
-					<div class="overlay"></div>
-					<div class="fh5co-text">
-						<i class="fh5co-intro-icon icon-rocket"></i>
-						<h2>Launch</h2>
-						<p>There's a feeling I get. When I look to the west, And my spirit is crying for leaving. In my thoughts I have seen</p>
-						<p><a href="#" class="btn btn-primary">Why Us?</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="row watch-video text-center to-animate">
-				<span>Watch the video</span>
-
-				<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>
-			</div>
-		</div>
 	</section>
 	
 	<section id="fh5co-testimonials" data-section="objetivos">
@@ -354,6 +313,7 @@
 					</div>
 				</div>
 			</div>
+			
 			<div class="row"> 
 				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
 					<i class="icon to-animate-2 icon-anchor"></i>
@@ -366,29 +326,235 @@
 				</div>
 			</div>
 			
+			<div id="fh5co-work">
+				<div class="col-md-12 section-heading text-left">
+					<h2 class=" left-border to-animate">Ejemplo de construcción de sistema SVM</h2>
+					<div class="row">
+						<div class="col-md-8 subtext to-animate">
+							<div class="row row-bottom-padded-sm">
+								
+								<div class="col-md-4 col-sm-6 col-xxs-12">
+									<a href="images/SVM1.png" class="fh5co-project-item image-popup to-animate">
+										<img src="images/SVM1.png" alt="Image" class="img-responsive">
+										<div class="fh5co-text" style="text-align: justify">
+											<span ALIGN="justify">
+													Se calcula la ubicación de los archivos en el campo espacial, considerando su nivel de relevancia. 
+													<br>
+													Ejemplo: 
+													<br>
+													Documento Relevantes:
+													<br>
+													{(0,1),(0,-1),(1,0),(-1,0)}
+													<br>
+													Documento No Relevantes:
+													<br>
+													{(3,1),(3,-1),(6,-1),(6,1)}
+											</span>
+										</div>
+									</a>
+								</div>
+								
+								<div class="col-md-4 col-sm-6 col-xxs-12">
+									<a href="images/SVM2.png" class="fh5co-project-item image-popup to-animate">
+										<img src="images/SVM2.png" alt="Image" class="img-responsive">
+										<div class="fh5co-text" style="text-align: justify">
+											<span ALIGN="justify">
+													Se determinan cuales son los puntos fronterizos, en el ejemplo serían los puntos: 
+													<br>
+													Puntos fronterizos:
+													<br>
+													{(3,1),(3,-1),(0,1)}
+											</span>
+										</div>
+									</a>
+								</div>
+								
+								<div class="col-md-4 col-sm-6 col-xxs-12">
+									<a href="images/SVM3.png" class="fh5co-project-item image-popup to-animate">
+										<img src="images/SVM3.png" alt="Image" class="img-responsive">
+										<div class="fh5co-text" style="text-align: justify">
+											<span ALIGN="justify">
+													Se calcula el hiperplano que separa los dos conjuntos con la mayor distancia entre los puntos, 
+													el cual en este caso consistiría en el siguiente 
+											</span>
+										</div>
+									</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="fh5co-work">
+				<div class="col-md-12 section-heading text-left">
+					<h2 class=" left-border to-animate">Ejemplo</h2>
+					<div class="row">
+						<div class="col-md-8 subtext to-animate">
+							<div class="row row-bottom-padded-sm">
+								
+								<div class="col-md-4 col-sm-6 col-xxs-12">
+									<a href="images/1.png" class="fh5co-project-item image-popup to-animate">
+										<img src="images/1.png" alt="Image" class="img-responsive">
+										<div class="fh5co-text" style="text-align: justify">
+											<span ALIGN="justify">
+													Determinar cual recta separa mejor cada uno de los grupos.
+											</span>
+										</div>
+									</a>
+								</div>
+								
+								<div class="col-md-4 col-sm-6 col-xxs-12">
+									<a href="images/2.png" class="fh5co-project-item image-popup to-animate">
+										<img src="images/2.png" alt="Image" class="img-responsive">
+										<div class="fh5co-text" style="text-align: justify">
+											<span ALIGN="justify">
+													Determinar cual recta separa con un mayor margen cada grupo
+											</span>
+										</div>
+									</a>
+								</div>
+								
+								<div class="col-md-4 col-sm-6 col-xxs-12">
+									<a href="images/3.png" class="fh5co-project-item image-popup to-animate">
+										<img src="images/3.png" alt="Image" class="img-responsive">
+										<div class="fh5co-text" style="text-align: justify">
+											<span ALIGN="justify">
+													Determinar cómo separa el siguiente grupo
+											</span>
+										</div>
+									</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12 section-heading text-left">
+					<h2 class=" left-border to-animate">Pros</h2>
+				</div>
+			</div>
+			
+			<div class="row"> 
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-anchor"></i>
+					<p ALIGN="justify">Funciona muy bien con un claro margen de separación.</p>
+				</div>
+				
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-layers2"></i>
+					<p ALIGN="justify">Es eficaz en espacios de alta dimensión.</p>
+				</div>
+			</div>
+			
 			<div class="row"> 
 				<div class="clearfix visible-sm-block"></div>
 
 				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
 					<i class="icon to-animate-2 icon-video2"></i>
-					<p ALIGN="justify">Se divide el valor en el acumulador de pesos entre el valor del acumulador de factores normalizados. </p>
+					<p ALIGN="justify">Es efectivo en casos donde el número de dimensiones es mayor que el número de muestras.</p>
 				</div>
 				
 				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
 					<i class="icon to-animate-2 icon-monitor"></i>
-					<p ALIGN="justify">Si el resultado es mayor del valor de la variable “threshold”, se retorna el valor como la calificación del filtro para el documento. 
-							En otro caso retorna 0 para saber que el documento no puede ser juzgado.</p>
+					<p ALIGN="justify">Utiliza un subconjunto de puntos de entrenamiento en la función de decisión (llamados vectores de soporte), por lo que también es eficiente en memoria.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12 section-heading text-left">
+					<h2 class=" left-border to-animate">Contras</h2>
+				</div>
+			</div>
+			
+			<div class="row"> 
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-anchor"></i>
+					<p ALIGN="justify">No tiene un buen rendimiento cuando tenemos un gran conjunto de datos porque el tiempo de entrenamiento requerido es mayor.</p>
 				</div>
 				
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-layers2"></i>
+					<p ALIGN="justify">Tampoco tiene un buen rendimiento, cuando el conjunto de datos tiene más ruido, es decir, las clases de destino se superponen.</p>
+				</div>
+				
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-video2"></i>
+					<p ALIGN="justify">SVM no proporciona directamente estimaciones de probabilidad, estas se calculan utilizando una costosa validación cruzada de cinco veces.</p>
+				</div>
 			</div>
+			
 		</div>
 	</section>
 
-	<section id="fh5co-work" data-section="work">
+	<section id="fh5co-about" data-section="Filtrado Bayesiano">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Work</h2>
+					<h2 class="to-animate">Filtrado Bayesiano</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Usado comúnmente en filtros antispam, este filtrado que usa palabras particulares que tienen determinadas probabilidades de ocurrir en correos 
+							spam o sitios de dudosa fiabilidad y que puedan estar en correos o sitios legítimos.</h3>
+							<br>
+							<img  src="images/bayes.JPG" alt="Image" class="img-responsive" align="middle">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<h3>Pr(S|W)</h3>
+						<br>
+						<p>Es la probabilidad de que sea un correo no deseado o un sitio poco confiable.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<h3>Pr(S)</h3>
+						<br>
+						<p>Es la probabilidad general de que cualquier mensaje dado es spam o un sitio poco confiable.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<h3>Pr(W|S)</h3>
+						<br>
+						<p>Es la probabilidad de que una determinada palabra aparezca en los spam o  sitios poco confiables.</p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<h3>Pr(H)</h3>
+						<br>
+						<p>Es la probabilidad general de que cualquier mensaje dado no es spam (es "legítimo") o  un sitio confiable.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<h3>Pr(W|H)</h3>
+						<br>
+						<p>Es la probabilidad de que una determinada palabra no aparezca en los spam o  sitios poco confiables.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="fh5co-work" data-section="Filtrado colaborativo ">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Filtrado colaborativo </h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
 							<h3>If there's a bustle in your hedgerow. Don't be alarmed now. It's just a spring clean for the May queen.</h3>
@@ -396,6 +562,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="row row-bottom-padded-sm">
 				<div class="col-md-4 col-sm-6 col-xxs-12">
 					<a href="images/work_1.jpg" class="fh5co-project-item image-popup to-animate">
@@ -499,62 +666,6 @@
 		</div>
 	</section>
 	
-	<section id="fh5co-about" data-section="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">About</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Our weary eyes still stray to the horizon. Though down this road we've been so many times.</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-person text-center to-animate">
-						<figure><img src="images/person1.jpg" alt="Image"></figure>
-						<h3>Jean Smith</h3>
-						<span class="fh5co-position">Web Designer</span>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-						<ul class="social social-circle">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-person text-center to-animate">
-						<figure><img src="images/person2.jpg" alt="Image"></figure>
-						<h3>Rob Smith</h3>
-						<span class="fh5co-position">Web Developer</span>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-						<ul class="social social-circle">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-person text-center to-animate">
-						<figure><img src="images/person3.jpg" alt="Image"></figure>
-						<h3>Larry Ben</h3>
-						<span class="fh5co-position">Web Designer</span>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-						<ul class="social social-circle">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
 	<section id="fh5co-counters" style="background-image: url(images/full_image_1.jpg);" data-stellar-background-ratio="0.5">
 		<div class="fh5co-overlay"></div>
 		<div class="container">
@@ -596,11 +707,11 @@
 		</div>
 	</section>
 
-	<section id="fh5co-contact" data-section="contact">
+	<section id="fh5co-contact" data-section="Redes Neuronales">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Get In Touch</h2>
+					<h2 class="to-animate">Redes Neuronales</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
 							<h3>Hello? Hello? Hello? Is there anybody in there? Just nod if you can hear me. Is there anyone at home? </h3>
